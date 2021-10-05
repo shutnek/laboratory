@@ -1,42 +1,49 @@
 ﻿using System;
 
-namespace program4
+namespace _5._4
 {
     class Program
     {
         static void Main(string[] args)
         {
-            double a = 0;
-            double b = 0;
-            double c = 0;
-            double d = 0;
-            double x = 0;
-            double z = 0;
-
-            Console.WriteLine("Введите два ненулевых числа ");
-            a = Convert.ToDouble(Console.ReadLine());
-            b = Convert.ToDouble(Console.ReadLine());
-            if ((a!=0) & (b != 0))
+            double x1, x2, y1, y2, l, l2, s, p = 0;
+            Console.WriteLine("введите  кординаты двух противоположных вершин");
+            x1 = Convert.ToDouble(Console.ReadLine());
+            y1 = Convert.ToDouble(Console.ReadLine());
+            x2 = Convert.ToDouble(Console.ReadLine());
+            y2 = Convert.ToDouble(Console.ReadLine());
+            if (x1 > x2)
             {
-                c = Math.Abs(a) * Math.Abs(b);
-                d = Math.Abs(a) + Math.Abs(b);
-                x = Math.Abs(a) - Math.Abs(b);
-                z = Math.Abs(a) / Math.Abs(b);
-                Console.Write("произведение модулей= ");
-                Console.WriteLine(c);
-                Console.Write("частное модулей= ");
-                Console.WriteLine(z);
-                Console.Write("сумма модулей= ");
-                Console.WriteLine(d);
-                Console.Write("разность модулей= ");
-                Console.WriteLine(x);
+                l = x1 - x2;
+                if (y1 > y2)
+                {
+                    l2 = y1 - y2;
+                }
+                else
+                {
+                    l2 = y2 - y1;
+                }
+
             }
             else
             {
-                Console.WriteLine("ошибка");
+                l = x2 - x1;
+                if (y1 > y2)
+                {
+                    l2 = y1 - y2;
+                }
+                else
+                {
+                    l2 = y2 - y1;
+                }
             }
-           
-           
+            s = l * l2;
+            p = l + l + l2 + l2;
+
+            Console.Write("площадь  = ");
+            Console.WriteLine(s);
+            Console.Write("периметр  = ");
+            Console.Write(p);
         }
     }
 }

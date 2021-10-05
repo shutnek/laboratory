@@ -1,41 +1,30 @@
 ﻿using System;
 
-namespace ConsoleApp2
+namespace _5._5
 {
     class Program
     {
         static void Main(string[] args)
         {
-            double a = 0;
-            double b = 0;
-            double c = 0;
-            double d = 0;
-            double x = 0;
-            double z = 0;
 
-            Console.WriteLine("Введите два ненулевых числа ");
-            a = Convert.ToDouble(Console.ReadLine());
-            b = Convert.ToDouble(Console.ReadLine());
-            if ((a != 0) & (b != 0))
-            {
-                c = Math.Abs(a) * Math.Abs(b);
-                d = Math.Abs(a) + Math.Abs(b);
-                x = Math.Abs(a) - Math.Abs(b);
-                z = Math.Abs(a) / Math.Abs(b);
-                Console.Write("произведение модулей= ");
-                Console.WriteLine(c);
-                Console.Write("частное модулей= ");
-                Console.WriteLine(z);
-                Console.Write("сумма модулей= ");
-                Console.WriteLine(d);
-                Console.Write("разность модулей= ");
-                Console.WriteLine(x);
-            }
-            else
-            {
-                Console.WriteLine("ошибка");
-            }
-
+            double x1, x2, y1, y2, l1, x3, y3, l2, l3, p, s, p2 = 0;
+            Console.WriteLine("введите  кординаты трех точек");
+            x1 = Convert.ToDouble(Console.ReadLine());
+            y1 = Convert.ToDouble(Console.ReadLine());
+            x2 = Convert.ToDouble(Console.ReadLine());
+            y2 = Convert.ToDouble(Console.ReadLine());
+            x3 = Convert.ToDouble(Console.ReadLine());
+            y3 = Convert.ToDouble(Console.ReadLine());
+            l1 = Math.Sqrt(((x2 - x1) * (x2 - x1)) + ((y2 - y1) * (y2 - y1)));
+            l2 = Math.Sqrt(((x3 - x2) * (x3 - x2)) + ((y3 - y2) * (y3 - y2)));
+            l3 = Math.Sqrt(((x3 - x1) * (x3 - x1)) + ((y3 - y1) * (y3 - y1)));
+            p = l1 + l2 + l3;
+            p2 = p / 2;
+            s = Math.Sqrt((p2 * (p2 - l1) * (p2 - l2) * (p2 - l3)));
+            Console.Write("Периметр = ");
+            Console.WriteLine(p);
+            Console.Write("Площадь = ");
+            Console.Write(s);
         }
     }
 }
