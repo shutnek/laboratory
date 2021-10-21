@@ -18,18 +18,18 @@ namespace program4
             b = Convert.ToDouble(Console.ReadLine());
             if ((a!=0) & (b != 0))
             {
-                c = Math.Abs(a) * Math.Abs(b);
-                d = Math.Abs(a) + Math.Abs(b);
-                x = Math.Abs(a) - Math.Abs(b);
-                z = Math.Abs(a) / Math.Abs(b);
-                Console.Write("произведение модулей= ");
-                Console.WriteLine(c);
-                Console.Write("частное модулей= ");
-                Console.WriteLine(z);
-                Console.Write("сумма модулей= ");
-                Console.WriteLine(d);
-                Console.Write("разность модулей= ");
+                c =(a*a)+(b*b);
+                d = (a*a)-(b*b);
+                x = (a*a)*(b*b);
+                z = (a*a)/(b*b);
+                Console.Write("произведение квадратов = ");
                 Console.WriteLine(x);
+                Console.Write("частное квадратов= ");
+                Console.WriteLine(z);
+                Console.Write("сумма квадратов= ");
+                Console.WriteLine(c);
+                Console.Write("разность квадратов= ");
+                Console.WriteLine(d);
             }
             else
             {
