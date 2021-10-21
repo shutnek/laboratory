@@ -27,13 +27,13 @@ namespace _5._2
             {
                 l2 = c - b;
             }
-S=l+l2
+S=l+l2;
             Console.Write("длина AC = ");
             Console.WriteLine(l);
             Console.Write("длина BC = ");
             Console.WriteLine(l2);
-            Console.Write("сумма длин AC и BC = ")
-                Console.Write(S)
+            Console.Write("сумма длин AC и BC = ");
+                Console.Write(S);
         }
     }
 }
