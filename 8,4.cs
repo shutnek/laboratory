@@ -9,9 +9,9 @@ namespace ConsoleApp11
             int a, b, c,d = 0;
             Console.WriteLine("введите целое двухзначное число ");
             a = Convert.ToInt32(Console.ReadLine());
-            b = a / 100;
-            c = a % 100;
-            a = b + c * 100;
+            b = a / 10;
+            c = a % 10;
+            a = b + (c * 10);
 
             Console.Write(a);
             Console.WriteLine("- перевернутое");
