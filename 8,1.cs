@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace ConsoleApp9
 {
@@ -6,15 +6,26 @@ namespace ConsoleApp9
     {
         static void Main(string[] args)
         {
-            double a = 0;
-            Console.WriteLine("введите размер файла в байтах ");
-            a = Convert.ToDouble(Console.ReadLine());
+            int a,b,c,d = 0;
+            int l =1024;
+            Console.WriteLine("введите размер файла в байтах(целое число) ");
+            a = Convert.ToInt32(Console.ReadLine());
+            b=a % 1024;
+if(b==0){
+    c = a / l;
+    
+}
+    else{
+       d = a / l; 
+       c=d + 1;
+        
+    }
 
-            a = a / 1024;
+            
 
 
-            Console.Write(a);
-            Console.WriteLine("килобайт");
+            Console.Write(c);
+            Console.WriteLine(" килобайт");
         }
     }
 }
