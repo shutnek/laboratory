@@ -1,0 +1,25 @@
+﻿// See https://aka.ms/new-console-template for more information
+double a,b;
+Console.WriteLine("Введите цену 1 кг конфет");
+a = Convert.ToDouble(Console.ReadLine());
+b = a / 10;
+Console.Write("цена 0.1 кг =  ");
+Console.WriteLine(b);
+Console.Write("цена 0.2 кг =  ");
+Console.WriteLine(2*b);
+Console.Write("цена 0.3 кг =  ");
+Console.WriteLine(b*3);
+Console.Write("цена 0.4 кг =  ");
+Console.WriteLine(b * 4);
+Console.Write("цена 0.5 кг =  ");
+Console.WriteLine(b * 5);
+Console.Write("цена 0.6 кг =  ");
+Console.WriteLine(b * 6);
+Console.Write("цена 0.7 кг =  ");
+Console.WriteLine(b * 7);
+Console.Write("цена 0.8 кг =  ");
+Console.WriteLine(b * 8);
+Console.Write("цена 0.9 кг =  ");
+Console.WriteLine(b * 9);
+Console.Write("цена 1 кг =  ");
+Console.WriteLine(a);
