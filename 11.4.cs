@@ -16,7 +16,7 @@ namespace ConsoleApp31
             }
             if (a < 0 && b > 0)
             {
-                Console.WriteLine("4 четверть");
+                Console.WriteLine("2 четверть");
             }
             if (a < 0 && b < 0)
             {
@@ -24,7 +24,7 @@ namespace ConsoleApp31
             }
             if (a > 0 && b < 0)
             {
-                Console.WriteLine("2 четверть");
+                Console.WriteLine("4 четверть");
             }
         }
     }
